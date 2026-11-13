@@ -26,23 +26,23 @@ export default function Services() {
     <section id="work" className="px-6 py-20 sm:px-10 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 max-w-2xl">
-          <h2 className="text-sm font-semibold tracking-[0.2em] text-amber-400 uppercase">
+          <h2 className="text-sm font-semibold tracking-[0.2em] text-amber-500 uppercase dark:text-amber-400">
             What we do
           </h2>
-          <p className="mt-4 text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl">
+          <p className="mt-4 text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
             We take products from zero to production.
           </p>
         </div>
-        <div className="grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 sm:grid-cols-2">
+        <div className="grid gap-px overflow-hidden rounded-2xl border border-black/10 bg-black/10 sm:grid-cols-2 dark:border-white/10 dark:bg-white/10">
           {services.map((s) => (
             <div
               key={s.title}
-              className="bg-[#0a0a0d] p-8 transition-colors hover:bg-[#101013]"
+              className="bg-white p-8 transition-colors hover:bg-zinc-50 dark:bg-[#0a0a0d] dark:hover:bg-[#101013]"
             >
-              <h3 className="text-lg font-semibold text-zinc-50">
+              <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">
                 {s.title}
               </h3>
-              <p className="mt-3 text-sm leading-6 text-zinc-400">
+              <p className="mt-3 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
                 {s.description}
               </p>
             </div>

@@ -25,9 +25,16 @@ export default function Team() {
                 {member.name}
               </h3>
               <p className="mt-1 text-sm text-zinc-400">{member.role}</p>
-              <span className="mt-4 inline-block rounded-full border border-white/10 px-2.5 py-1 text-[11px] font-medium tracking-wide text-zinc-400 uppercase">
-                {member.track}
-              </span>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {member.tracks.map((track) => (
+                  <span
+                    key={track}
+                    className="inline-block rounded-full border border-white/10 px-2.5 py-1 text-[11px] font-medium tracking-wide text-zinc-400 uppercase"
+                  >
+                    {track}
+                  </span>
+                ))}
+              </div>
             </div>
           ))}
         </div>

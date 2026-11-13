@@ -1,7 +1,7 @@
 export type TeamMember = {
   name: string;
   role: string;
-  track: string;
+  tracks: string[];
   initials: string;
 };
 
@@ -9,31 +9,31 @@ export const team: TeamMember[] = [
   {
     name: "Aunindya Prosad Saha",
     role: "AI/ML Engineer",
-    track: "AI/ML",
+    tracks: ["AI/ML"],
     initials: "AS",
   },
   {
     name: "Maria Sultana",
     role: "Software Engineer",
-    track: "SRBD",
+    tracks: ["SRBD"],
     initials: "MS",
   },
   {
     name: "Ahmad Abdullah",
     role: "Software Engineer",
-    track: "SRBD",
+    tracks: ["SRBD"],
     initials: "AA",
   },
   {
     name: "Zarif Zeisan Mustafa",
-    role: "Software Engineer · Enosis Solutions",
-    track: "SRBD",
+    role: "Software Engineer",
+    tracks: ["SRBD", "Enosis Solutions"],
     initials: "ZM",
   },
   {
     name: "Zakaria Emon",
     role: "Software QA Engineer",
-    track: "DSI",
+    tracks: ["DSI"],
     initials: "ZE",
   },
 ];

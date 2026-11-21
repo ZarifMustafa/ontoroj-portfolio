@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ThemeToggle from "@/components/ThemeToggle";
 
 const links = [
@@ -10,11 +11,25 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-black/5 bg-white/80 backdrop-blur-md dark:border-white/5 dark:bg-[#060608]/80">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-10">
-        <a href="#top" className="flex items-center gap-2">
-          <span className="h-2 w-2 rounded-full bg-amber-400 shadow-[0_0_12px_2px_rgba(251,191,36,0.8)]" />
-          <span className="text-sm font-semibold tracking-[0.2em] text-zinc-900 uppercase dark:text-zinc-100">
-            Ontoroj
-          </span>
+        <a href="#top" aria-label="Ontoroj — back to top" className="flex items-center">
+          <Image
+            src="/ontoroj-logo.svg"
+            alt="Ontoroj"
+            width={51}
+            height={44}
+            priority
+            unoptimized
+            className="h-11 w-auto dark:hidden"
+          />
+          <Image
+            src="/ontoroj-logo-dark.svg"
+            alt="Ontoroj"
+            width={51}
+            height={44}
+            priority
+            unoptimized
+            className="hidden h-11 w-auto dark:block"
+          />
         </a>
         <nav className="hidden items-center gap-8 text-sm text-zinc-600 sm:flex dark:text-zinc-400">
           {links.map((l) => (

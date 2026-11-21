@@ -12,7 +12,7 @@ const services = [
   {
     title: "Web & mobile engineering",
     description:
-      "Robust, well-tested software built on requirements and system design (SRBD) — clean architecture that scales with the product.",
+      "Robust, well-tested web and mobile software from engineers trained at Samsung R&D Bangladesh — clean architecture that scales with the product.",
   },
   {
     title: "Quality assurance",

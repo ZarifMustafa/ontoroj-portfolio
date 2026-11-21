@@ -6,7 +6,7 @@ const companies = new Set(team.flatMap((m) => m.previously));
 const stats = [
   { value: team.length, label: "Engineers" },
   { value: disciplines.length, label: "Disciplines" },
-  { value: companies.size, label: "Industry teams we came from" },
+  { value: companies.size, label: "Companies" },
 ];
 
 export default function Team() {
